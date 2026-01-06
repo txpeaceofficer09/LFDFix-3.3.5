@@ -1,0 +1,1 @@
+I ran into random error messages when a dungeon would pop.  I was not the only one experiencing the issue and the error was with setting a texture in a Blizzard function.  This addon simple re-writes that function to prevent the error.
