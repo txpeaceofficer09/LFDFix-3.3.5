@@ -14,6 +14,7 @@ LFDParentFrame:HookScript("OnShow", function()
     local mode = GetLFGMode()
     if not mode then
         lfdOpen = GetTime()
+        f:Show()
     end
 end)
 
@@ -22,8 +23,11 @@ local function OnUpdate(self, elapsed)
 		if GetTime() - lfdOpen >= 0.2 then
 			LFDQueueFrame_SetType(260)
 			lfdOpen = nil
+			self:Hide()
 		end
 	end
 end
 
 f:SetScript("OnUpdate", OnUpdate)
+
+f:Hide()
