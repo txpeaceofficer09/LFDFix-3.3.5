@@ -2,13 +2,13 @@ local f = CreateFrame("Frame")
 local lfdOpen = nil
 
 function LFDDungeonReadyDialogReward_SetReward(button, dungeonID, rewardIndex)
-	local name, texturePath, quantity = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
-	print(name, texturePath, quantity, dungeonID, rewardIndex, button:GetName())
-	if type(texturePath) ~= nil and texturePath:find("Interface\\Icons\\", 1, true) == 1 then
-		SetPortraitToTexture(button.texture, texturePath);
-	end
-	button.rewardID = rewardIndex;
-	button:Show();
+	--local name, texturePath, quantity = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
+	--print(name, texturePath, quantity, dungeonID, rewardIndex, button:GetName())
+	--if type(texturePath) ~= nil and texturePath:find("Interface\\Icons\\", 1, true) == 1 then
+	--	SetPortraitToTexture(button.texture, texturePath);
+	--end
+	--button.rewardID = rewardIndex;
+	--button:Show();
 end
 
 LFDParentFrame:HookScript("OnShow", function()
