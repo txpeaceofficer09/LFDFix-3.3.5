@@ -1,4 +1,6 @@
 ## Interface: 30300
 ## Author: SoonBeSteak
 ## Notes: Fix bug(s) in the LFD.
+## Version: 1.0.0
+## Author: SoonBeSteak
 Core.lua
